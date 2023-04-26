@@ -1,0 +1,9 @@
+{
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cmake.configureOnOpen": true,
+  "files.associations": {
+    "ov5640.h": "c",
+    "stm32ipl.h": "c",
+    "stm32h7xx.h": "c"
+  }
+}
