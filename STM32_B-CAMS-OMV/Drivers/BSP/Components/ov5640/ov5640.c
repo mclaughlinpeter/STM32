@@ -1429,7 +1429,7 @@ int32_t OV5640_SetBrightness(OV5640_Object_t *pObj, int32_t Level)
   {
     if (Level < 0)
     {
-      tmp = 0x01;
+      tmp = 0x09;
       if (ov5640_write_reg(&pObj->Ctx, OV5640_SDE_CTRL8, &tmp, 1) != OV5640_OK)
       {
         ret = OV5640_ERROR;
@@ -1437,7 +1437,7 @@ int32_t OV5640_SetBrightness(OV5640_Object_t *pObj, int32_t Level)
     }
     else
     {
-      tmp = 0x09;
+      tmp = 0x01;
       if (ov5640_write_reg(&pObj->Ctx, OV5640_SDE_CTRL8, &tmp, 1) != OV5640_OK)
       {
         ret = OV5640_ERROR;
